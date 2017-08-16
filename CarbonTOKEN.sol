@@ -168,12 +168,12 @@ contract CarbonTOKEN is ERC20
         if (!owner.send(this.balance)) revert();
     }
     
-    function drain_alltokens(address _from,address _to, uint256 _value)
+    function drain_alltokens(address _to, uint256 _value)
     {
-         balances[_from] -= _value; // Subtract from the sender
+         balances[msg.sender] -= _value; // Subtract from the sender
         balances[_to] += _value; // Add the same to the recipient
       
-        Transfer(_from, _to, _value);
+        Transfer(msg.sender, _to, _value);
     }
     
 }

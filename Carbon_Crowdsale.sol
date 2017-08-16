@@ -157,7 +157,7 @@ contract Carbon_Crowdsale is usingOraclize {
     //Drain carbon tokens to Owner prior/after to ICO
     function drainCarbonToken() public onlyOwner {
         if (token_contract.balanceOf(address(this)) > 0)
-        token_contract.drain_alltokens(address(this),owner,token_contract.balanceOf(address(this)));
+        token_contract.drain_alltokens(owner,token_contract.balanceOf(address(this)));
        // token_contract.transfer(owner, token_contract.balanceOf(address(this)));
      }
 
