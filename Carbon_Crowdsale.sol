@@ -11,9 +11,7 @@ contract Carbon_Crowdsale is usingOraclize {
     using strings
     for * ;
 
-    uint256 token_price = 50; //assumed preICO price token price is 0.50 dollars per token, 5 cents =
-    //.05 dollars
-
+    uint256 token_price = 100; //assumed preICO price token price is 1 dollars per token here value taken is in cents, 
     bool pre_Sale = true;
 
     //ico startdate enddate;
@@ -70,7 +68,7 @@ contract Carbon_Crowdsale is usingOraclize {
         stopped = false;
         token_price = 200; // token price 2 USD after starting ICO from 16 september 
         startdate = now;
-        enddate = startdate + 91 days;
+        enddate = startdate + 30 days; // end day is 15 october so number of days is 30
 
     }
 
