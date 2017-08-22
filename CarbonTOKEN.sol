@@ -75,7 +75,7 @@ contract CarbonTOKEN is ERC20
     function CarbonTOKEN()
     {
         totalSupply = 100000000 *10**4; // 100 million, Update total supply includes 4 0's more to go for the decimals
-        name = "CARBON"; // Set the name for display purposes
+        name = "CARBON TOKEN CLASSIC"; // Set the name for display purposes
         symbol = "CTC"; // Set the symbol for display purposes
         decimals = 4; // Amount of decimals for display purposes
         owner = msg.sender;
